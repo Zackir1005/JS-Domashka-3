@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domashka 3</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+    <script>
+        var _contacts = ['Номер: +7(999)999-99-99', 'Эл.почта: example@gmail.com', 
+        'Адрес: г.Разработчик, ул. Подвальная, д.5'];
+
+        generateFooter(_contacts, 'SiteName', 'black', 'lightgray');
+
+        function generateFooter(contacts, siteName, bgcolor, fontcolor) {
+            document.write(
+                `<footer style="background-color: ${bgcolor}; color: ${fontcolor};">
+                    <div class="leftCol">
+                        <p>${contacts[0]}</p>
+                        <p>${contacts[1]}</p>
+                        <p>${contacts[2]}</p>
+                    </div>
+                    <div class ="rightCol">
+                        <h4>${siteName} &copy2023 г.</h4>
+                    </div>
+                </footer>`
+            );
+        }
+
+    </script>
+</body>
+</html>
